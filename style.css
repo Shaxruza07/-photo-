@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background: #2A7B9B;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.photos {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    margin-top: 200px;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.73);
+    text-align: center;
+}
+
+.carousel {
+  text-align: center;
+}
+
+.carousel img {
+  width: 750px;
+  height: 484px;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 25px 25px;
+  border: none;
+  background-color: #2a7b9b;
+  color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  margin: 0 20px;
+}
+
+.buttons button:hover {
+  background: #2a7b9b;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+
+#showNumber {
+    padding: 20px;
+    width: 50px;
+    height: 30px;
+    background-color: #2A7B9B;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.766);
+    margin-left: 333px;
+    margin-top: 10px;
+}
