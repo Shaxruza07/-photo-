@@ -9,6 +9,17 @@ let active = 0;
 
 showNumber.innerHTML = active +1
 
+setInterval(function() {
+  active++;
+
+  if (active >= imgs.length) {
+    active = 0;
+  }
+
+  slide.src = imgs[active];
+  showNumber.innerHTML = active +1
+},1000)
+
 btnRight.addEventListener("click", () => {
   active++;
 
@@ -30,5 +41,4 @@ btnLeft.addEventListener("click", () => {
   slide.src = imgs[active];
   showNumber.innerHTML = active +1
 });
-
 
