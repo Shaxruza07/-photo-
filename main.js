@@ -2,6 +2,9 @@ const btnLeft = document.getElementById("btnLeft");
 const btnRight = document.getElementById("btnRight");
 const slide = document.getElementById("slide");
 const showNumber = document.getElementById("showNumber");
+let input = document.querySelector("#input");
+let searchBtn = document.querySelector("#search");
+let text = document.querySelector("#text")
 
 let imgs = ["./images/image-one.jpg","./images/image-two.jpg","./images/image-three.jpg", "./images/image-four.avif","./images/image-five.jpg"]
 
@@ -18,7 +21,8 @@ setInterval(function() {
 
   slide.src = imgs[active];
   showNumber.innerHTML = active +1
-},1000)
+  text.textContent = ""
+},2000)
 
 btnRight.addEventListener("click", () => {
   active++;
@@ -41,4 +45,16 @@ btnLeft.addEventListener("click", () => {
   slide.src = imgs[active];
   showNumber.innerHTML = active +1
 });
+
+searchBtn.addEventListener("click", () => {
+  let number = input.value - 1
+
+  if(imgs[number]) {
+    slide.src = imgs[number]
+    showNumber.innerHTML = number + 1
+    input.value = " "
+  } else {
+    text.textContent = "This image does not exist"
+  }
+})
 
